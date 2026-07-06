@@ -7,7 +7,7 @@ import AuthProvider from './context/AuthContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <HashRouter base="/<React-Authenticator-App>">
+    <HashRouter base="/React-Authenticator-App">
       <AuthProvider>
         <App />
       </AuthProvider>
