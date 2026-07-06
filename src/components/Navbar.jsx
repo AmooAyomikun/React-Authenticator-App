@@ -74,6 +74,13 @@ const Navbar = () => {
                             <button className='btn btn-primary' onClick={logOut}>Log out</button>
                         </>
                     }
+
+                    {currentUser === null && 
+                        <>
+                            <Link className='btn btn-outline' onClick={() => setMenu(false)} to={"/login"}>Log in</Link>
+                            <Link className='btn btn-primary' onClick={() => setMenu(false)} to={"/signup"}>Sign up</Link>
+                        </>
+                    }
                 </div>
             </div>
         </div>
